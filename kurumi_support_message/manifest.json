@@ -1,0 +1,14 @@
+{
+  "package": "kurumi_support_message",
+  "name": "Kurumi Tokisaki Support Message",
+  "version": "1.0.0",
+  "mod": 0,
+  "author": "",
+  "description": "Displays a red startup message cheering on actuarial practice CP1.",
+  "conflicts": [],
+  "files": [
+    "__init__.py"
+  ],
+  "min_point_version": 0,
+  "max_point_version": 0
+}
