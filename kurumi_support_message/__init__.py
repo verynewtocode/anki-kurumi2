@@ -3,8 +3,7 @@
 from aqt.gui_hooks import main_window_did_init
 from aqt.utils import tooltip
 
-MESSAGE = "<span style='color: red;'>kurumi tokisaki supports passing of actuarial practice CP1</span>"
-DISPLAY_DURATION_MS = 5000
+MESSAGE = "<span style='color: red;'>Kurumi Tokisaki supports passing of actuarial practice CP1</span>"
 
 
 def show_support_message(_mw=None):
@@ -14,7 +13,7 @@ def show_support_message(_mw=None):
     optional. Accepting it as an optional parameter keeps compatibility with
     both old and new versions of Anki.
     """
-    tooltip(MESSAGE, period=DISPLAY_DURATION_MS)
+    tooltip(MESSAGE, period=0)
 
 
 main_window_did_init.append(show_support_message)
