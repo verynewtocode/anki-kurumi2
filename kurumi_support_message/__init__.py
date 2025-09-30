@@ -7,8 +7,13 @@ MESSAGE = "<span style='color: red;'>kurumi tokisaki supports passing of actuari
 DISPLAY_DURATION_MS = 5000
 
 
-def show_support_message(_mw):
-    """Display the Kurumi Tokisaki support message when Anki starts."""
+def show_support_message(_mw=None):
+    """Display the support message when Anki starts.
+
+    The hook signature changed in Anki 25.07 so the `_mw` argument became
+    optional. Accepting it as an optional parameter keeps compatibility with
+    both old and new versions of Anki.
+    """
     tooltip(MESSAGE, period=DISPLAY_DURATION_MS)
 
 
